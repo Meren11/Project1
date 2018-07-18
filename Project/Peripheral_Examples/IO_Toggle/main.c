@@ -49,7 +49,7 @@ uint8_t ButtonRead = 0; //Initialize ButtonRead variable
 uint8_t ButtonRead2 = 0;
 int sayi=0;
 int control;
-int ara;
+int ara;                    
 int ara2;
 int e;
 int K[24]={80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0};
@@ -75,8 +75,8 @@ int main(void)
 
 	while(1) //Infiinte loop!
 	{
-led(K);
-for(e=0;e<5100000;e++);
- allblue(K);
+led(K);                     // it is a speical function that can light neopixel from our neolib library
+for(e=0;e<5100000;e++);  // there is a delay for reset situation
+ allblue(K);                    // another function that arrance A array from neolib library
 	}
 }
